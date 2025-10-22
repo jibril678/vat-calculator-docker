@@ -12,7 +12,22 @@
   padding: 10px;
 }
 
-body{
+body {
   padding: 10px;
-  background-color: green;
+  background: linear-gradient(270deg, #1e3c72, #2a5298, #00c6ff);
+  background-size: 600% 600%;
+  animation: gradientShift 10s ease infinite;
+  color: white;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
